@@ -2,102 +2,91 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aelson Sobral's Academic Profile</title>
+    <title>Aelson Sobral's Academic Website</title>
     <style>
         body {
-            font-family: 'Arial', sans-serif;
-            line-height: 1.6;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background: #f4f4f4;
+            background: #f0f0f0;
             color: #333;
         }
         .container {
             width: 80%;
-            margin: auto;
-            overflow: hidden;
+            margin: 0 auto;
         }
         header {
-            background: #35424a;
-            color: #ffffff;
-            padding-top: 30px;
-            min-height: 70px;
-            border-bottom: #e8491d 3px solid;
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
         }
-        header a {
-            color: #ffffff;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-size: 16px;
-        }
-        header ul {
+        nav ul {
             padding: 0;
             list-style: none;
+            text-align: center;
         }
-        header li {
-            float: left;
+        nav ul li {
             display: inline;
-            padding: 0 20px 0 20px;
+            margin: 0 15px;
         }
-        header #branding {
-            float: left;
+        nav a {
+            text-decoration: none;
+            color: white;
         }
-        header #branding h1 {
-            margin: 0;
+        .intro {
+            background: white;
+            padding: 20px 0;
+            text-align: center;
         }
-        header nav {
-            float: right;
-            margin-top: 10px;
-        }
-        header .highlight, header .current a {
-            color: #e8491d;
-            font-weight: bold;
-        }
-        header a:hover {
-            color: #ffffff;
-            font-weight: bold;
-        }
-        .profile-pic {
-            width: 150px; /* You can adjust the size as needed */
-            height: auto;
-            border-radius: 50%; /* Circular image */
+        .section {
             margin: 20px 0;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
     </style>
 </head>
 <body>
     <header>
         <div class="container">
-            <div id="branding">
-                <h1><span class="highlight">Aelson Sobral</span> Academic Profile</h1>
-            </div>
-            <nav>
-                <ul>
-                    <li class="current"><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#research">Research</a></li>
-                    <li><a href="#publications">Publications</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+            <h1>Aelson Sobral</h1>
         </div>
     </header>
 
-    <section id="home">
+    <nav>
         <div class="container">
-            <!-- Profile image -->
-            <img src="https://sobral-aelson.github.io/aelson-sobral.github.io/photo.jpg
-" alt="Aelson Sobral" class="profile-pic">
-            <h1>Welcome</h1>
-            <p>This is the homepage of your academic profile. Here you can include a brief introduction about yourself and your academic interests.</p>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#teaching">Teaching</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </div>
-    </section>
+    </nav>
 
-    <!-- ... (The rest of your sections go here) ... -->
+    <div class="intro container">
+        <img src="https://sobral-aelson.github.io/homepage/photo.jpg
+" alt="Aelson Sobral" style="width:150px; height:auto; border-radius:50%;">
+        <p>Welcome to my academic website. Here you can find information about my research, teaching, and publications.</p>
+    </div>
 
-    <footer>
-        <p>Aelson Sobral, ©2024</p>
+    <div id="about" class="section container">
+        <h2>About</h2>
+        <p>Information about your academic background and interests...</p>
+    </div>
+
+    <!-- Repeat the above div for other sections like Research, Teaching, etc. -->
+
+    <footer class="container">
+        <p>© 2024 Aelson Sobral</p>
     </footer>
 </body>
 </html>
+
+
+
+
