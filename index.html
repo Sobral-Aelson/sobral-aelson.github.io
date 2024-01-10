@@ -6,47 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aelson Sobral's Academic Website</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: #f0f0f0;
-            color: #333;
-        }
-        .container {
-            width: 80%;
-            margin: 0 auto;
-        }
-        header {
-            background-color: #333;
-            color: white;
-            padding: 10px 0;
-            text-align: center;
-        }
-        nav ul {
-            padding: 0;
-            list-style: none;
-            text-align: center;
-        }
-        nav ul li {
-            display: inline;
-            margin: 0 15px;
-        }
-        nav a {
-            text-decoration: none;
-            color: white;
-        }
-        .intro {
-            background: white;
-            padding: 20px 0;
-            text-align: center;
-        }
-        .section {
-            margin: 20px 0;
-            background: white;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
+        /* CSS styles */
     </style>
 </head>
 <body>
@@ -61,7 +21,6 @@
             <ul>
                 <li><a href="#about">About</a></li>
                 <li><a href="#research">Research</a></li>
-                <li><a href="#teaching">Teaching</a></li>
                 <li><a href="#publications">Publications</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -69,8 +28,7 @@
     </nav>
 
     <div class="intro container">
-        <img src="https://sobral-aelson.github.io/homepage/photo.jpg
-" alt="Aelson Sobral" style="width:150px; height:auto; border-radius:50%;">
+        <img src="https://sobral-aelson.github.io/sobral-aelson.github.io/photo.jpg" alt="Aelson Sobral" style="width:150px; height:auto; border-radius:50%;">
         <p>Welcome to my academic website. Here you can find information about my research, teaching, and publications.</p>
     </div>
 
@@ -79,14 +37,29 @@
         <p>Information about your academic background and interests...</p>
     </div>
 
-    <!-- Repeat the above div for other sections like Research, Teaching, etc. -->
+    <div id="research" class="section container">
+        <h2>Research</h2>
+        <p>Details about your research...</p>
+    </div>
+
+    <div id="publications" class="section container">
+        <h2>Publications</h2>
+        <ul>
+            <li>A Sobral, D. dos Prazeres...</li>
+            <li>D Dos Prazeres, A Sobral, J. M Urbano...</li>
+        </ul>
+    </div>
+
+    <div id="contact" class="section container">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:aelson.sobral@academico.ufpb.br">aelson.sobral@academico.ufpb.br</a></p>
+    </div>
 
     <footer class="container">
         <p>© 2024 Aelson Sobral</p>
     </footer>
 </body>
 </html>
-
 
 
 
