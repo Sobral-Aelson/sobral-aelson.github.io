@@ -1,793 +1,328 @@
-<!DOCTYPE HTML>
-<!--
-	Urban by TEMPLATED
-	templated.co @templatedco
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
--->
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<title>Aelson Sobral</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8" />
+  <title>Aelson Sobral</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Aelson Sobral — Postdoctoral fellow at KAUST (CEMSE). Research in Free Boundary Problems, regularity theory, and related PDEs." />
+  <meta name="theme-color" content="#0b2e4e" />
+  <meta name="color-scheme" content="light" />
+  <!-- <link rel="canonical" href="https://your-domain.example/"> -->
 
-	<!--
-			MISSING STUFF FOR MATH/LaTeX/usw.
-		-->
+  <!-- Performance for external script -->
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <script defer src="https://cdn.jsdelivr.net/gh/pcooksey/bibtex-js@1.0.0/src/bibtex_js.js"></script>
 
-	<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/pcooksey/bibtex-js@1.0.0/src/bibtex_js.js"></script>
+  <link rel="stylesheet" href="assets/css/main.css" />
 
-	<link rel="stylesheet" href="assets/css/main.css" />
+  <!-- Consolidated inline CSS -->
+  <style>
+    /* --- Intro (About Me) typography aligned to Papers/Preprints meta --- */
+    .intro-section p {
+      font-size: 1.05em;      /* matches meta size */
+      line-height: 1.6;
+      color: #445060;
+      margin: 0 0 0.9rem 0;
+    }
+    .intro-section a {
+      color: #ffffff;
+      font-weight: 600;
+      text-decoration: underline;
+    }
+    .intro-section a:hover { opacity: 0.9; }
+    .intro-section h3 {
+      font-size: 1.12em;      /* matches paper title scale */
+      color: #ffffff;
+      font-weight: 700;
+      font-style: italic;
+      margin: 0 0 0.6rem 0;
+    }
+    .intro-section .flex.flex-2 { align-items: center; gap: 2rem; }
+    .intro-section .col.col2 p:last-child { margin-bottom: 0; }
+    .intro-section .photo-circle {
+      width: clamp(180px, 28vw, 360px);
+      aspect-ratio: 1 / 1;
+      border-radius: 50%;
+      overflow: hidden;
+      box-shadow: 0 8px 24px rgba(0,0,0,.12);
+      margin: 0 auto;
+    }
+    .intro-section .photo-circle img {
+      width: 100%; height: 100%;
+      display: block; object-fit: cover; object-position: center;
+    }
+    @media (max-width: 900px) { .intro-section .flex.flex-2 { gap: 1.25rem; } }
+
+    /* --- Photo helpers (kept from your earlier block) --- */
+    .col.col1.first { display: flex; justify-content: center; align-items: flex-start; }
+    .photo-rect {
+      width: clamp(260px, 34vw, 520px);
+      border-radius: 16px; overflow: hidden; box-shadow: 0 8px 24px rgba(0,0,0,.12);
+    }
+    .photo-rect img { width: 100%; height: auto; display: block; }
+
+    /* --- Research section: center + two-column layout (no typography change to lists) --- */
+    .research-section .research-center {
+      max-width: 900px; margin: 0 auto 2rem auto; text-align: center;
+    }
+    /* Size tweak requested for Research */
+    .research-section .research-center h3 { font-size: 1.12em; color:#fff; font-weight:700; font-style: italic; margin: 0 0 .6rem 0; }
+    .research-section .research-center p { font-size: 1.05em; line-height:1.6; color:#445060; margin:0; }
+
+    .research-section .pub-grid {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 2rem 3rem; align-items: start;
+    }
+    .research-section .pub-list { list-style: none; margin: 0; padding: 0; }
+    .research-section .pub-item { margin: 0 0 1.25rem 0; }
+    @media (max-width: 900px) {
+      .research-section .pub-grid { grid-template-columns: 1fr; }
+    }
+
+    /* Accessibility: skip link */
+    .skip-link {
+      position: absolute; left: -999px; top: auto; width: 1px; height: 1px; overflow: hidden;
+    }
+    .skip-link:focus {
+      left: 1rem; top: 1rem; width: auto; height: auto; padding: .5rem .75rem;
+      background: #fff; color:#000; border-radius: .25rem; z-index: 1000;
+    }
+  </style>
 </head>
 
-<body>
-
-	<!-- Header 
-			<header id="header" class="alt">
-				<div class="logo"><a href="index.html">Urban <span>by TEMPLATED</span></a></div>
-				<a href="#menu">Menu</a>
-			</header>-->
-
-	<!-- Nav -->
-	<nav id="menu">
-		<ul class="links">
-			<li><a href="index.html">Back to Top</a></li>
-			<!--<li><a href="generic.html">Generic</a></li>
-			<li><a href="elements.html">Elements</a></li>-->
-		</ul>
-	</nav>
-
-	<!-- Banner -->
-	<section id="banner">
-		<div class="inner">
-			<header>
-				<h1>Aelson Sobral</h1>
-				<p>Postdoctoral fellow</p>
-				<p>KAUST, Saudi Arabia</p>
-			</header>
-			<a href="#main" class="button big scrolly">About Me</a>&nbsp; &nbsp; &nbsp;
-			<a href="#main1" class="button big scrolly">Research</a>&nbsp; &nbsp; &nbsp;
-			<!--<a href="#main2" class="button big scrolly">OiO Seminar</a>&nbsp; &nbsp; &nbsp;
-			<a href="#main3" class="button big scrolly">News</a>&nbsp; &nbsp; &nbsp;-->
-			<!--<a href="#main4" class="button big scrolly">Education</a>-->
-		</div>
-	</section>
-
-	<!-- Main -->
-	<div id="main">
-
-		<!-- Section -->
-		<section class="wrapper style1">
-			<div class="inner">
-				<!-- 2 Columns -->
-				<div class="flex flex-2">
-					<div class="col col1">
-						<div class="image round fit">
-							<!-- <a href="generic.html" class="link"><img src="images/self-portrait.png" alt="" /></a> -->
-							<!-- <a href="generic.html" class="link"><img src="images/surowiec-opt1.jpg" alt="" /></a> -->
-							<!-- <a href="generic.html" class="link"><img src="images/surowiec-opt1-crop.jpg" alt="" /></a> -->
-							<a class="link"><img src="images/cropped-profile-photo.jpg" alt="" /></a>
-						</div>
-					</div>
-					<div class="col col2">
-						<!--<h3>Hello!</h3>-->
-						<p>I am a Postdoctorate fellow in the
-							<a
-								href="https://cemse.kaust.edu.sa">
-								Computer, Electrical and Mathematical Sciences and Engineering Division (CEMSE), 
-							</a>
-							at
-							<a href="https://kaust.edu.sa/en/research">King Abdullah University of Science and Technology (KAUST)</a>
-							in Saudi Arabia.
-						</p>
-						<p>Drop me a line if interested in a joint work:</p>
-
-						<p> Email: aelson[dot]sobral[at]kaust[dot]edu[dot]sa
-
-						<p>
-							I completed my PhD at the Federal University of Paraíba, Brazil, under the supervision of Professors Damião Araújo and Eduardo Teixeira. Prior to finishing my PhD, I spent a year as a research scholar with Professor Teixeira, focusing on regularity in Free Boundary Problems. Additionally, I had the opportunity to spend some time at PUC-Rio, working with Professor Boyan Sirakov.
-						</p>
-
-						<p>
-							My research is the development of geometric tools for analyzing 
-							Free Boundary Problems. 
-						</p>
-
-						<p>
-							You can find a more detailed CV
-							<a href="research/CV.pdf" target="_blank"
-								rel="noopener noreferrer"><u>here.</u></a>
-						</p>
-
-						<a href="#" class="button">Back to Top</a>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<!-- Section -->
-		<div id="main1"></div>
-		<section class="wrapper style2">
-
-			<div class="inner">
-				<div class="flex flex-2">
-					<!-- <div id="main1"></div> -->
-					<div class="col col2">
-
-						<h3>Research</h3>
-						<p> 
-							My research focuses on developing geometric tools to analyze Free Boundary Problems, with a particular interest in regularity theory for degenerate and singular PDEs, as well as free boundary regularity. Recently, I’ve also become interested in generalized maximum principles for elliptic equations in both divergence and non-divergence forms.
-						</p>
-
-						<p></p>
-
-						<h3>Papers</h3>
-						<li> D. dos Prazeres, A. Sobral and J. M. Urbano,
-							<b><i style="color:#D3D3D3;">
-									Cordes-Nirenberg type results for nonlocal equations with deforming kernels
-								</i></b> J. Funct. Anal. 287 (2024), no. 9, Paper No. 110593, 33 pp.
-							<a href=https://doi.org/10.1016/j.jfa.2024.110593 target="_blank" rel="noopener noreferrer"><u>Journal</u></a>
-				
-						</li>
-						<p> </p>
-
-			<li class="pub-item">
-  <h3 class="pub-title">
-    <a href="https://doi.org/10.1007/s42985-021-00090-y" target="_blank" rel="noopener noreferrer">
-      Regularity estimates for nonlocal equations with an asymptotic property
-    </a>
-  </h3>
-  <div class="pub-meta">
-    <div class="pub-authors">D. dos Prazeres and A. Sobral</div>
-    <div class="pub-venue">Partial Differ. Equ. Appl. 2 (2021), no. 3, Paper No. 33, 13 pp.</div>
-    <div class="pub-year">2021</div>
-  </div>
-</li>
-
-						<p></p>
-
-						<li>A. Sobral, E. Teixeira, J.M. Urbano
-							<b><i style="color:#D3D3D3;">
-									Degenerate free boundary problems with oscillatory singularities
-								</i></b> Partial Differ. Equ. Appl.
-							<a target="_blank" rel="noopener noreferrer"><u>Journal</u></a>
-
-						</li>
-
-						<p></p>
-
-
-						<li>D. Araújo, A. Sobral and E. Teixeira
-							<b><i style="color:#D3D3D3;">
-									Regularity in diffusion models with gradient activation
-								</i></b> J. Funct. Anal.
-							<a href=https://linkinghub.elsevier.com/retrieve/pii/S0022123625003295 target="_blank"
-								rel="noopener noreferrer"><u>Journal</u></a>
-
-						</li>
-
-						<p></p>
-
-						<!--<li>S. W. Walker and T. M. Surowiec
-							<b><i style="color:#D3D3D3;">
-									Optimal Control of the Landau-de Gennes Model of Nematic Liquid Crystals
-								</i></b> To appear in SIAM J. Control and Optimization (2023)
-							<a href=https://www.researchgate.net/publication/362249852_OPTIMAL_CONTROL_OF_THE_LANDAU-DE_GENNES_MODEL_OF_NEMATIC_LIQUID_CRYSTALS
-								target="_blank" rel="noopener noreferrer"><u>ResearchGate</u></a>
-							<a href=https://arxiv.org/abs/2304.06421 target="_blank"
-								rel="noopener noreferrer"><u>arxiv</u></a>
-						</li>
-						<p> </p>
-
-						<li>M. Hashemi, R. Herzog, and T. M. Surowiec
-							<b><i style="color:#D3D3D3;">
-									Optimal control of the stationary Kirchhoff equation
-								</i></b> Computational Optimization and Applications (2023)
-							<a href=https://doi.org/10.1007/s10589-023-00463-6 target="_blank"
-								rel="noopener noreferrer"><u>journal</u></a>
-							<a href="https://link.springer.com/content/pdf/10.1007/s10589-023-00463-6.pdf?pdf=button"
-								target="_blank" rel="noopener noreferrer"><u>SpringerLink</u></a>
-						</li>
-						<p> </p>
-
-						<li>D. P. Kouri, M. Staudigl, and T. M. Surowiec
-							<b><i style="color:#D3D3D3;">
-									A Relaxation-based Probabilistic Approach for PDE-constrained
-									Optimization under Uncertainty with Pointwise State Constraints
-								</i></b> Computational Optimization and Applications (2023)
-							<a href=a target="_blank" rel="noopener noreferrer"><u></u></a>
-							<a href="research/DPKouri_MStaudigl_TMSurowiec_2023.pdf" target="_blank"
-								rel="noopener noreferrer"><u>Accepted version.</u></a>
-							<a href=https://rdcu.be/c6wL0 target="_blank" rel="noopener noreferrer"><u>SharedIt
-									link</u></a>
-
-						</li>
-						<p> </p>
-
-						</li>
-						<p> </p>
-						<li>S. Dahlke, H. Harbrecht, and T. M. Surowiec
-							<b><i style="color:#D3D3D3;"> A Wavelet-Based Approach
-									for the Simulation and Optimal Control of NonLocal Operator Equations.
-								</i></b> SIAM Journal on Scientific Computing, vol. 44, no. 4,
-							pp. A2691-A2708 (2022) <a href=https://epubs.siam.org/doi/10.1137/20M1350790 target="_blank"
-								rel="noopener noreferrer"><u>journal</u></a>
-
-						</li>
-						<p> </p>
-						<li>D.B. Gahururu, M. Hintermüller, and T. M. Surowiec
-							<b> <i style="color:#D3D3D3;"> Risk-Neutral PDE-Constrained Generalized
-									Nash Equilibrium Problems.</i></b>
-							To appear in Mathematical Programming (2022) <a
-								href=https://link.springer.com/article/10.1007/s10107-022-01800-z target="_blank"
-								rel="noopener noreferrer"><u>
-									journal</u></a>
-
-						</li>
-						<p> </p>
-						<li>M. Hintermüller, S.-M. Stengl, and T. M. Surowiec
-							<b><i style="color:#D3D3D3;"> Uncertainty Quantification in Image
-									Segmentation using the Ambrosio-Tortorelli Approximation of the
-									Mumford-Shah Energy.
-								</i></b> Journal of Mathematical Imaging and Vision, vol. 63,
-							pp. 1095-1117 (2021) <a href=https://link.springer.com/article/10.1007/s10851-021-01034-2
-								target="_blank" rel="noopener noreferrer"><u>journal</u></a>
-
-						</li>
-						<p> </p>
-						<li>P.E. Farrell, I. Papadopoulos, and T. M. Surowiec
-							<b><i style="color:#D3D3D3;"> Computing Multiple Solutions of Topology Optimization
-									Problems.
-								</i></b> SIAM Journal on Scientific Computing, vol. 43, no. 3
-							pp. 1555–1582 (2021) <a href=https://epubs.siam.org/doi/10.1137/20M1326209 target="_blank"
-								rel="noopener noreferrer"><u>journal</u></a>
-
-						</li>
-						<p> </p>
-						<li>M. Hoffhues, W. Römisch, and T. M. Surowiec
-							<b><i style="color:#D3D3D3;"> On Quantitative Stability in Infinite-Dimensional
-									Optimization under Uncertainty</i></b> Optimization Letters , vol. 15
-							pp. 2733–2756 (2021) <a href=https://link.springer.com/article/10.1007/s11590-021-01707-2
-								target="_blank" rel="noopener noreferrer"><u>journal</u></a>
-
-						</li>
-						<p> </p>
-						<li>D. P. Kouri and T. M. Surowiec
-							<b><i style="color:#D3D3D3;"> A Primal-Dual Algorithm for
-									Risk Minimization </i></b> Mathematical Programming, vol. 193,
-							no. 1, pp. 337–363 (2022)
-							<a href=https://doi.org/10.1007/s10107-020-01608-9 target="_blank"
-								rel="noopener noreferrer"><u>journal</u></a>
-
-						</li>
-						<p> </p>
-						<li>S. Dahlke and T. M. Surowiec
-							<b><i style="color:#D3D3D3;"> Wavelet-based approximations of pointwise bound
-									constraints in Lebesgue and Sobolev spaces
-								</i></b> IMA J. Numerical Analysis, vol. 42, no. 1, pp. 417–439 (2022)
-							<a href=https://academic.oup.com/imajna/article-abstract/42/1/417/5916501?redirectedFrom=fulltext
-								target="_blank" rel="noopener noreferrer"><u>journal</u></a>
-
-						</li>
-						<p> </p>
-						<li>S. Garreis, M. Ulbrich, and T. M. Surowiec
-							<b><i style="color:#D3D3D3;"> An Interior-Point Approach for Solving
-									Risk-Averse PDE-Constrained Optimization Problems
-									with Coherent Risk Measures
-								</i></b> SIAM J. Optimization, vol. 31, no. 1, pp. 1-29 (2021)
-							<a href=https://epubs.siam.org/doi/abs/10.1137/19M125039X target="_blank"
-								rel="noopener noreferrer"><u>journal</u></a>
-
-						</li>
-						<p> </p>
-						<li>D. P. Kouri and T. M. Surowiec
-							<b><i style="color:#D3D3D3;"> Risk-Averse Optimal Control of
-									Semilinear Elliptic PDEs
-								</i></b> ESAIM: Control, Optimization and Calculus of Variations
-							vol. 26, no. 53 (2020)
-							<a href=https://www.esaim-cocv.org/articles/cocv/abs/2020/01/cocv180080/cocv180080.html
-								target="_blank" rel="noopener noreferrer"><u>journal</u></a> -->
-
-
-							<h3>Preprints</h3>
-						
-						<p> </p>
-						<li>D. Araújo, A. Sobral, E. Teixeira and J. M. Urbano
-							<b><i style="color:#D3D3D3;">
-									On free boundary problems shaped by oscillatory singularities
-								</i></b> Submitted.
-							<a href=https://arxiv.org/abs/2401.08071 target="_blank" rel="noopener noreferrer"><u>arXiv</u></a>
-
-						</li>
-						<p> </p>
-						<li>T. Nascimento, G. Sá, A. Sobral and E. Teixeira
-							<b><i style="color:#D3D3D3;">
-									Higher regularity of solutions to fully nonlinear elliptic equations
-								</i></b> Submitted.
-							<a href=https://arxiv.org/abs/2312.02932
-								target="_blank" rel="noopener noreferrer"><u>arXiv</u></a>
-
-						</li>
-						<p> </p>
-						<li>D. Araújo, A. Sobral, E. Teixeira and J. M. Urbano
-							<b><i style="color:#D3D3D3;">
-									Borderline regularity in singular free boundary problems.
-								</i></b> Submitted.
-							<a href=https://arxiv.org/abs/2508.14736
-								target="_blank" rel="noopener noreferrer"><u>arXiv</u></a>
-
-						</li>
-						<p> </p>
-						<li>D. Araújo, A. Sobral, E. Teixeira and J. M. Urbano
-							<b><i style="color:#D3D3D3;">
-									Regularity estimates for PDEs with nonlocal degeneracies.
-								</i></b> Submitted.
-
-						</li>
-						<p> </p>
-						<li>D. Araújo and A. Sobral
-							<b><i style="color:#D3D3D3;">
-									On a nonlocal superconductivity problem
-								</i></b> Submitted.
-							<a href=https://arxiv.org/abs/2508.20841
-								target="_blank" rel="noopener noreferrer"><u>arXiv</u></a>
-
-						</li>
-						<p> </p>
-							<a href="#" class="button">Back to Top</a>
-							<p></p>
-					</div>
-					<div class="col col1 first">
-						<div class="image round fit">
-							<a class="link"><img src="images/research_photo.jpg"
-									alt="" /></a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- Section -->
-		<!--<div id="main2"></div>
-		<section class="wrapper style1">
-			<div class="inner">
-				<div class="flex flex-2">
-					<div class="col col2">
-
-						<h3>Optimization in Oslo (OiO) Seminar</h3>
-						<p>
-							The seminar will showcase internationally renowned
-							speakers with a strong emphasis on topics involving,
-							but not limited to, optimization under uncertainty,
-							PDE-constrained optimization, optimal control of
-							complex systems, uncertainty quantification,
-							scientific machine learning, and application areas
-							such as image processing, materials science and more.
-							The OiO seminar is a part of a broader effort to grow
-							interest in continuous optimization in Oslo and is
-							open to students, postdoctoral researchers, and beyond.
-						</p>
-						<p>
-							The planned format of the talk is 50 minutes for your
-							presentation and 10 minutes for questions. We are planning
-							to allow people to remotely attend the event and, pending
-							each speaker's consent, we will record the events and host
-							them on YouTube. If you'd like to attend an event in person
-							then please contact me directly.
-						</p>
-
-						<p>Click each title for full a abstract and bio!</p>
-					</div>
-					<div class="col col1 first">
-						<div class="image round fit">
-							<a href="generic.html" class="link"><img
-									src="images/eduardo-alvarado-3E5Dqe-X-jY-unsplash.jpg" alt="" /></a>
-						</div>
-					</div>
-					<p>
-
-					<table class="table">
-						<thead>
-							<tr>
-
-								<th>Date</th>
-								<th>Speaker</th>
-								<th>Affiliation</th>
-								<th>Title</th>
-								<th>Video</th>
-
-
-							</tr>
-						</thead>
-
-						<tbody>
-							<tr class="active-row">
-								<td>October 19, 2022</td>
-								<td>Karl Kunisch</td>
-								<td>University of Graz &
-									Radon Institute
-								</td>
-								<td><a href="adverts/karl-kunisch-advert.pdf" target="_blank">
-										Solution Concepts for Optimal Feedback Control of Nonlinear Partial
-										Differential Equations</a>
-								</td>
-								<td>
-									<a href=https://www.youtube.com/watch?v=WxygcfVWghw target="_blank"
-										rel="noopener noreferrer"><u>Video</u></a>
-								</td>
-							</tr>
-							<tr class="active-row">
-								<td>October 26, 2022</td>
-								<td>Niels Aage</td>
-								<td>Technical University of Denmark</td>
-								<td><a href="adverts/niels-aage-advert.pdf" target="_blank">
-										Ultra-high resolution structural optimization: Current state-of-the-art and
-										new frontiers</a>
-								</td>
-								<td><a href=https://www.youtube.com/watch?v=M7GJLikHCsM target="_blank"
-										rel="noopener noreferrer"><u>Video</u></a></td>
-							</tr>
-							<tr class="active-row">
-								<td>November 2, 2022</td>
-								<td>Coralia Cartis</td>
-								<td>University of Oxford</td>
-								<td><a href="adverts/coralia-cartis-advert.pdf" target="_blank">
-										Sparse random embeddings and their applications to optimization
-									</a></td>
-								<td><a href=https://www.youtube.com/watch?v=t_8YJx970bM target="_blank"
-										rel="noopener noreferrer"><u>Video</u></a></td>
-
-							</tr>
-							<tr class="active-row">
-								<td>November 9, 2022</td>
-								<td>Lars Ruthotto</td>
-								<td>Emory University</td>
-								<td><a href="adverts/lars-ruthotto-advert.pdf" target="_blank">
-										Neural Network Approaches for High-Dimensional Optimal Control
-									</a></td>
-								<td><a href="https://www.youtube.com/watch?v=XVEIUw2fv1A" target="_blank"
-										rel="noopener noreferrer"><u>Video</u></a></td>
-							</tr>
-							<tr class="active-row">
-								<td>November 16, 2022</td>
-								<td>Drew P. Kouri</td>
-								<td>Sandia National Laboratories</td>
-								<td><a href="adverts/drew-p-kouri-advert.pdf" target="_blank">
-										An Inexact Trust-Region Algorithm for Nonsmooth Nonconvex Optimization
-									</a>
-								</td>
-								<td><a href="https://www.youtube.com/watch?v=ZYP6CpxpUhE" target="_blank"
-										rel="noopener noreferrer"><u>Video</u></a></td>
-							</tr>
-							<tr class="active-row">
-								<td>November 23, 2022</td>
-								<td>Brendan Keith</td>
-								<td>Brown University</td>
-								<td><a href="adverts/brendan-keith-advert.pdf" target="_blank">
-										Adaptive Sampling for Constrained Optimization under Uncertainty
-									</a></td>
-								<td><a href="https://www.youtube.com/watch?v=5PVgj93AxPQ" target="_blank"
-										rel="noopener noreferrer"><u>Video</u></a></td>
-							</tr>
-							<tr class="active-row">
-								<td>November 30, 2022</td>
-								<td>Mathias Staudigl</td>
-								<td>Maastricht University</td>
-								<td><a href="adverts/mathias-staudigl-advert.pdf" target="_blank">
-										Conditional Gradient methods for generalised self-concordant minimization
-									</a></td>
-								<td><a href="https://www.youtube.com/watch?v=y1WUhMOgGEE" target="_blank"
-										rel="noopener noreferrer"><u>Video</u></a></td>
-							</tr>
-							<tr class="active-row">
-								<td>December 7, 2022</td>
-								<td>Michael Hintermüller</td>
-								<td>Humboldt-Universität zu Berlin &
-									Weierstraß-Institut</td>
-								<td><a href="adverts/michael-hintermueller-advert.pdf" target="_blank">
-										PDE-Constrained Optimization with Learning-Informed Structures
-									</a></td>
-								<td><a href="https://www.youtube.com/watch?v=6K1X2ojYl1g" target="_blank"
-										rel="noopener noreferrer"><u>Video</u></a></td>
-							</tr>
-							<tr class="active-row">
-								<td>December 14, 2022</td>
-								<td>Johannes Royset</td>
-								<td>Naval Postgraduate School</td>
-								<td><a href="adverts/johannes-royset-advert.pdf" target="_blank">
-										Rockafellian functions: The most important concept in optimization that you
-										havent heard of
-									</a></td>
-								<td><a href="https://www.youtube.com/watch?v=LQQ-aZ9lvAg" target="_blank"
-										rel="noopener noreferrer"><u>Video</u></a></td>
-							</tr>
-							<tr class="active-row">
-								<td>December 21, 2022</td>
-								<td>Johannes Milz</td>
-								<td>Technische Universität München</td>
-								<td>
-									<a href="adverts/johannes-milz-advert.pdf" target="_blank">
-										Consistency of Monte Carlo Estimators for Risk-Neutral PDE-Constrained
-										Optimization
-									</a>
-								</td>
-								<td><a href="https://www.youtube.com/watch?v=r8iMfiyTIRc" target="_blank"
-										rel="noopener noreferrer"><u>Video</u></a></td>
-							</tr>
-							<tr class="active-row">
-								<td>March 8, 2023</td>
-								<td>Paul Manns</td>
-								<td>Technische Universität Dortmund</td>
-								<td>
-									<a href="adverts/paul-manns-advert.pdf" target="_blank">
-										Regularization in Integer Optimal Control -- Lessons Learned and Challenges
-										Ahead
-									</a>
-								</td>
-								<td><a href="https://youtu.be/_IfzfeKdjCM" target="_blank"
-										rel="noopener noreferrer"><u>Video</u></a></td>
-							</tr>
-
-							<tr class="active-row">
-								<td>March 29, 2023</td>
-								<td>Vyacheslav Kungurtsev</td>
-								<td>Czech Technical University, Prague</td>
-								<td>
-									<a href="adverts/vyacheslav-kungurtsev-advert.pdf" target="_blank">
-										Simultaneous Online Model Identification and Production Optimization Using
-										Modifier Adaptation as a POMDP
-									</a>
-								</td>
-								<td><a href="https://youtu.be/Rgvy72VjUY8" target="_blank"
-										rel="noopener noreferrer"><u>Video</u></a></td>
-							</tr>
-
-							<tr class="active-row">
-								<td>April 25, 2023</td>
-								<td>Alfio Borzi</td>
-								<td>Julius-Maximilians-Universität Würzburg</td>
-								<td>
-									<a href="adverts/alfio-borzi-advert.pdf" target="_blank">
-										Quantum models and optimal control problems
-									</a>
-								</td>
-								<td><a href="https://youtu.be/IUs3XY8VW0E" target="_blank"
-										rel="noopener noreferrer"><u>Video</u></a></td>
-							</tr>
-
-							<tr class="active-row">
-								<td>May 3, 2023</td>
-								<td>Boris Mordukhovich</td>
-								<td>Wayne State University, USA</td>
-								<td>
-									<a href="adverts/boris-mordukhovich-advert.pdf" target="_blank">
-										Generalized Newton Methods in Nonsmooth Optimization
-									</a>
-								</td>
-								<td><a href="https://youtu.be/-qn736XIvAo" target="_blank"
-										rel="noopener noreferrer"><u>Video</u></a></td>
-							</tr>
-
-							<tr class="active-row">
-								<td>May 24, 2023</td>
-								<td>Harbir Antil</td>
-								<td>George Mason University</td>
-								<td>
-									<a href="adverts/harbir-antil-advert.pdf" target="_blank">
-										Optimization, Digital Twins and Augmented Lagrangian Methods
-									</a>
-								</td>
-								<td><a href="https://youtu.be/tTXUxGohT-Y" target="_blank" 
-									rel="noopener noreferrer"><u>Video</u></a></td>
-							</tr>
-
-							<tr class="active-row">
-								<td>October 4, 2023</td>
-								<td>Sören Bartels</td>
-								<td>Albert-Ludwigs-Universität Freiburg</td>
-								<td>
-									<a href="adverts/soeren-bartels-advert.pdf" target="_blank">
-										Error estimates for nonconforming and discontinuous discretizations of nonsmooth problems via convex duality
-									</a>
-								</td>
-								<td><a href="" target="_blank" rel="noopener noreferrer"><u>Video</u></a></td>
-							</tr>
-
-							<tr class="active-row">
-								<td>October 11, 2023</td>
-								<td>Michael Ulbrich</td>
-								<td>Technische Universität München</td>
-								<td>
-									<a href="adverts/michael-ulbrich-advert.pdf" target="_blank">
-										A Semismooth Newton Stochastic Proximal Point Algorithm with Variance Reduction
-									</a>
-								</td>
-								<td><a href="https://youtu.be/BAogYmSHpoQ" target="_blank" rel="noopener noreferrer"><u>Video</u></a></td>
-							</tr>
-
-							<tr class="active-row">
-								<td>October 18, 2023</td>
-								<td>Ronny Bergmann</td>
-								<td>Norges teknisk-naturvitenskapelige universitet (NTNU)</td>
-								<td>
-									<a href="adverts/ronny-bergmann-advert.pdf" target="_blank">
-										Nonsmooth, nonconvex Optimization on Riemannian Manifolds
-									</a>
-								</td>
-								<td><a href="https://youtu.be/x0MTTWkITyc" target="_blank" rel="noopener noreferrer"><u>Video</u></a></td>
-							</tr>
-
-							<tr class="active-row">
-								<td>October 25, 2023</td>
-								<td>Peng Chen</td>
-								<td>Georgia Institute of Technology</td>
-								<td>
-									<a href="adverts/peng-chen-advert.pdf" target="_blank">
-										Derivative-Informed Neural Operator for PDE-Constrained Optimization under Uncertainty
-									</a>
-								</td>
-								<td><a href="https://youtu.be/xzySdQdTFu4" target="_blank" rel="noopener noreferrer"><u>Video</u></a></td>
-							</tr>
-
-							<tr class="active-row">
-								<td>November 2, 2023</td>
-								<td>Shawn W. Walker</td>
-								<td>Lousiana State University</td>
-								<td>
-									<a href="adverts/shawn-w-walker-advert.pdf" target="_blank">
-										Controlling defects in the Landau-de Gennes model of nematic liquid crystals
-									</a>
-								</td>
-								<td><a href="https://youtu.be/PbB-FrqTr_M" target="_blank" rel="noopener noreferrer"><u>Video</u></a></td>
-							</tr>
-
-							<tr class="active-row">
-								<td>November 8, 2023</td>
-								<td>Juan Carlos de Los Reyes</td>
-								<td>Escuela Politécnica Nacional de Ecuador</td>
-								<td>
-									<a href="adverts/juan-carlos-de-los-reyes-advert.pdf" target="_blank">
-										Bilevel learning for inverse problems
-									</a>
-								</td>
-								<td><a href="https://youtu.be/PSQjP8SRT94" target="_blank" rel="noopener noreferrer"><u>Video</u></a></td>
-							</tr>
-
-							<tr class="active-row">
-								<td>November 15, 2023</td>
-								<td>Florian Schäfer</td>
-								<td>Georgia Institute of Technology</td>
-								<td>
-									<a href="adverts/florian-schaefer-advert.pdf" target="_blank">
-										Solvers, Models, Learners: Toward Statistical Scientific Computing
-									</a>
-								</td>
-								<td><a href="" target="_blank" rel="noopener noreferrer"><u>Video</u></a></td>
-							</tr>
-						</tbody>
-					</table>
-					</p>
-
-					<a href="#" class="button">Back to Top</a>
-					<p></p>
-				</div>
-			</div>
-		</section> -->
-
-		<!-- Section -->
-		<!--<div id="main3"></div>
-		<section class="wrapper style2">
-			<div class="inner">
-				<div class="flex flex-2">
-					<div class="col col1">
-
-						<div class="image round fit">
-							<a href="generic.html" class="link"><img
-									src="images/mr-cup-fabien-barral-Mwuod2cm8g4-unsplash.jpg" alt="" /></a>
-						</div>
-					</div>
-					<div class="col col2">
-						<h3>News</h3>
-						<p>Coming Soon!</p>
-						<p></p>
-						<a href="#" class="button">Back to Top</a>
-
-
-					</div>
-				</div>
-			</div>
-		</section> -->
-
-		<!-- Section -->
-		<!--<div id="main4"></div>
-		<section class="wrapper style1">
-			<div class="inner">
-				<div class="flex flex-2">
-					<div class="col col2">
-
-						<h3>Education</h3>
-						<p>Coming Soon!</p>
-						<a href="#" class="button">Back to Top</a>
-						<p></p>
-
-
-					</div>
-					<div class="col col1 first">
-						<div class="image round fit">
-							<a href="generic.html" class="link"><img src="images/nathan-dumlao-ewGMqs2tmJI-unsplash.jpg"
-									alt="" /></a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section> -->
-
-
-
-		<!-- Section -->
-		<!-- <section class="wrapper style1">
-						<div class="inner">
-							<header class="align-center">
-								<h2>Aliquam ipsum purus dolor</h2>
-								<p>Cras sagittis turpis sit amet est tempus, sit amet consectetur purus tincidunt.</p>
-							</header>
-							<div class="flex flex-3">
-								<div class="col align-center">
-									<div class="image round fit">
-										<img src="images/pic03.jpg" alt="" />
-									</div>
-									<p>Sed congue elit malesuada nibh, a varius odio vehicula aliquet. Aliquam consequat, nunc quis sollicitudin aliquet. </p>
-									<a href="#" class="button">Learn More</a>
-								</div>
-								<div class="col align-center">
-									<div class="image round fit">
-										<img src="images/pic05.jpg" alt="" />
-									</div>
-									<p>Sed congue elit malesuada nibh, a varius odio vehicula aliquet. Aliquam consequat, nunc quis sollicitudin aliquet. </p>
-									<a href="#" class="button">Learn More</a>
-								</div>
-								<div class="col align-center">
-									<div class="image round fit">
-										<img src="images/pic04.jpg" alt="" />
-									</div>
-									<p>Sed congue elit malesuada nibh, a varius odio vehicula aliquet. Aliquam consequat, nunc quis sollicitudin aliquet. </p>
-									<a href="#" class="button">Learn More</a>
-								</div>
-							</div>
-						</div>
-					</section> -->
-
-	</div>
-
-	<!-- Footer -->
-	<footer id="footer">
-		<div class="copyright">
-			<ul class="icons">
-				<!--<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-				<li><a href="https://www.youtube.com/channel/UC3bFQGjRKoTbJJkEaWXzgNg/featured"
-						class="icon fa-youtube"><span class="label">YouTube</span></a></li>-->
-				<!-- <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li> -->
-				<!-- <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li> -->
-				<!-- <li><a href="#" class="icon fa-snapchat"><span class="label">Snapchat</span></a></li> -->
-			</ul>
-			<p>&copy;
-				<!--Untitled. All rights reserved. -->
-				Design: <a href="https://templated.co">TEMPLATED</a>.
-				Downloaded from <a href="https://themeslab.org/" target="_blank">Themeslab</a>
-				Images: <a href="https://unsplash.com">Unsplash</a>.
-
+<body id="top">
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <!-- Nav -->
+  <nav id="menu" aria-label="Site">
+    <ul class="links">
+      <li><a href="#top">Back to Top</a></li>
+      <!-- <li><a href="generic.html">Generic</a></li>
+      <li><a href="elements.html">Elements</a></li> -->
+    </ul>
+  </nav>
+
+  <!-- Banner -->
+  <section id="banner">
+    <div class="inner">
+      <header>
+        <h1>Aelson Sobral</h1>
+        <p>Postdoctoral fellow</p>
+        <p>KAUST, Saudi Arabia</p>
+      </header>
+      <a href="#main" class="button big scrolly">About Me</a>&nbsp;&nbsp;&nbsp;
+      <a href="#main1" class="button big scrolly">Research</a>
+    </div>
+  </section>
+
+  <!-- Main -->
+  <main id="main">
+    <!-- Intro/About -->
+    <section class="wrapper style1 intro-section">
+      <div class="inner">
+        <div class="flex flex-2">
+          <div class="col col1">
+            <div class="photo-circle">
+              <a class="link">
+                <img src="images/kaust-photo.JPG" alt="Aelson at KAUST" loading="lazy" decoding="async">
+              </a>
+            </div>
+          </div>
+
+          <div class="col col2">
+            <!-- <h3>Hello!</h3> -->
+            <p>
+              I am a Postdoctorate fellow in the
+              <a href="https://cemse.kaust.edu.sa" rel="noopener noreferrer">Computer, Electrical and Mathematical Sciences and Engineering Division (CEMSE)</a>
+              at
+              <a href="https://kaust.edu.sa/en/research" rel="noopener noreferrer">King Abdullah University of Science and Technology (KAUST)</a>
+              in Saudi Arabia.
+            </p>
+
+            <p>Drop me a line if interested in a joint work:</p>
+
+            <p>Email: aelson[dot]sobral[at]kaust[dot]edu[dot]sa</p>
+
+            <p>
+  			I completed my PhD at the Federal University of Paraíba (Brazil), advised by Professors Damião Araújo and Eduardo Teixeira. Before graduating, I spent a year as a research scholar with Professor Teixeira at the University of Central Florida. After graduation, and before moving to Saudi Arabia, I undertook a research stay at PUC-Rio with Professor Boyan Sirakov.
 			</p>
 
-		</div>
-	</footer>
+            <p>
+            My research focuses on developing geometric tools to analyze Free Boundary Problems, with a particular
+            interest in regularity theory for degenerate and singular PDEs, as well as free boundary regularity.
+            Recently, I’ve also become interested in generalized maximum principles for elliptic equations in both
+            divergence and non-divergence forms.
+        	</p>
 
-	<!-- Scripts -->
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/jquery.scrolly.min.js"></script>
-	<script src="assets/js/jquery.scrollex.min.js"></script>
-	<script src="assets/js/skel.min.js"></script>
-	<script src="assets/js/util.js"></script>
-	<script src="assets/js/main.js"></script>
+            <p>
+              You can find a more detailed CV
+              <a href="research/CV.pdf" target="_blank" rel="noopener noreferrer"><u>here.</u></a>
+            </p>
 
+            <a href="#top" class="button">Back to Top</a>
+          </div>
+        </div>
+      </div>
+    </section>
+<!-- Research + Publications -->
+<div id="main1"></div>
+
+<!-- Inline CSS override: make left column wider -->
+<style>
+  /* Base grid (kept consistent with your existing styles) */
+  .research-section .pub-grid {
+    display: grid;
+    gap: 2rem 3rem;            /* row-gap, column-gap */
+    align-items: start;
+    grid-template-columns: 1.7fr 1.5fr;  /* ⟵ Left wider than right */
+  }
+  @media (max-width: 900px) {
+    .research-section .pub-grid { grid-template-columns: 1fr; }
+  }
+</style>
+
+<section class="wrapper style2 research-section">
+  <div class="inner">
+
+    <!-- Two columns (unchanged Papers/Preprints styles) -->
+    <div class="pub-grid">
+      <!-- Publications (left, wider) -->
+      <div class="pub-col">
+        <h3>Publications</h3>
+        <ul class="pub-list">
+          <li class="pub-item">
+            <a href="https://linkinghub.elsevier.com/retrieve/pii/S0022123625003295" target="_blank" rel="noopener noreferrer"
+               style="color:#ffffff; font-style:italic; text-decoration:none; font-weight:700; font-size:1.12em;">
+              Regularity in diffusion models with gradient activation
+            </a>
+            <div style="margin-top:4px; line-height:1.35; font-size:1.05em; color:#445060;">
+              <em>J. Funct. Anal.</em> (2025) ·
+              <span>D. Araújo, A. Sobral and E. Teixeira</span>
+            </div>
+          </li>
+
+          <li class="pub-item">
+            <a href="https://link.springer.com/article/10.1007/s42985-025-00320-7" target="_blank" rel="noopener noreferrer"
+               style="color:#ffffff; font-style:italic; text-decoration:none; font-weight:700; font-size:1.12em;">
+              Degenerate free boundary problems with oscillatory singularities
+            </a>
+            <div style="margin-top:4px; line-height:1.35; font-size:1.05em; color:#445060;">
+              <em>Partial Differ. Equ. Appl.</em> (2025) ·
+              <span>A. Sobral, E. Teixeira and J.M. Urbano</span>
+            </div>
+          </li>
+
+          <li class="pub-item">
+            <a href="https://doi.org/10.1016/j.jfa.2024.110593" target="_blank" rel="noopener noreferrer"
+               style="color:#ffffff; font-style:italic; text-decoration:none; font-weight:700; font-size:1.12em;">
+              Cordes-Nirenberg type results for nonlocal equations with deforming kernels
+            </a>
+            <div style="margin-top:4px; line-height:1.35; font-size:1.05em; color:#445060;">
+              <em>J. Funct. Anal.</em> (2024) ·
+              <span>D. dos Prazeres, A. Sobral and J. M. Urbano</span>
+            </div>
+          </li>
+
+          <li class="pub-item">
+            <a href="https://doi.org/10.1007/s42985-021-00090-y" target="_blank" rel="noopener noreferrer"
+               style="color:#ffffff; font-style:italic; text-decoration:none; font-weight:700; font-size:1.12em;">
+              Regularity estimates for nonlocal equations with an asymptotic property
+            </a>
+            <div style="margin-top:4px; line-height:1.35; font-size:1.05em; color:#445060;">
+              <em>Partial Differ. Equ. Appl.</em> (2021) ·
+              <span>D. dos Prazeres and A. Sobral</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Preprints (right, narrower) -->
+      <div class="pub-col">
+        <h3>Preprints</h3>
+        <ul class="pub-list">
+          <li class="pub-item">
+            <a href="https://arxiv.org/abs/2401.08071" target="_blank" rel="noopener noreferrer"
+               style="color:#ffffff; font-style:italic; text-decoration:none; font-weight:700; font-size:1.12em;">
+              On free boundary problems shaped by oscillatory singularities
+            </a>
+            <div style="margin-top:4px; line-height:1.35; font-size:1.05em; color:#445060;">
+              <em>Submitted</em> (2024) ·
+              <span>D. Araújo, A. Sobral, E. Teixeira and J. M. Urbano</span>
+            </div>
+          </li>
+
+          <li class="pub-item">
+            <a href="https://arxiv.org/abs/2312.02932" target="_blank" rel="noopener noreferrer"
+               style="color:#ffffff; font-style:italic; text-decoration:none; font-weight:700; font-size:1.12em;">
+              Higher regularity of solutions to fully nonlinear elliptic equations
+            </a>
+            <div style="margin-top:4px; line-height:1.35; font-size:1.05em; color:#445060;">
+              <em>Submitted</em> (2024) ·
+              <span>T. Nascimento, G. Sá, A. Sobral and E. Teixeira</span>
+            </div>
+          </li>
+
+          <li class="pub-item">
+            <a href="https://arxiv.org/abs/2508.14736" target="_blank" rel="noopener noreferrer"
+               style="color:#ffffff; font-style:italic; text-decoration:none; font-weight:700; font-size:1.12em;">
+              Borderline regularity in singular free boundary problems.
+            </a>
+            <div style="margin-top:4px; line-height:1.35; font-size:1.05em; color:#445060;">
+              <em>Submitted</em> (2025) ·
+              <span>D. Araújo, A. Sobral, E. Teixeira and J. M. Urbano</span>
+            </div>
+          </li>
+
+          <li class="pub-item">
+            <a href=" " target="_blank" rel="noopener noreferrer"
+               style="color:#ffffff; font-style:italic; text-decoration:none; font-weight:700; font-size:1.12em;">
+              Regularity estimates for PDEs with nonlocal degeneracies.
+            </a>
+            <div style="margin-top:4px; line-height:1.35; font-size:1.05em; color:#445060;">
+              <em>Submitted</em> (2025) ·
+              <span>D. Araújo, A. Sobral, E. Teixeira and J. M. Urbano</span>
+            </div>
+          </li>
+
+          <li class="pub-item">
+            <a href="https://arxiv.org/abs/2508.20841" target="_blank" rel="noopener noreferrer"
+               style="color:#ffffff; font-style:italic; text-decoration:none; font-weight:700; font-size:1.12em;">
+              On a nonlocal superconductivity problem.
+            </a>
+            <div style="margin-top:4px; line-height:1.35; font-size:1.05em; color:#445060;">
+              <em>Submitted</em> (2025) ·
+              <span>D. Araújo and A. Sobral</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <p style="text-align:center; margin-top:2rem;">
+      <a href="#top" class="button">Back to Top</a>
+    </p>
+  </div>
+</section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="copyright">
+      <ul class="icons"></ul>
+      <p>
+        &copy; Design: <a href="https://templated.co" rel="noopener noreferrer">TEMPLATED</a>.
+        Downloaded from <a href="https://themeslab.org/" target="_blank" rel="noopener noreferrer">Themeslab</a>.
+        Images: <a href="https://unsplash.com" rel="noopener noreferrer">Unsplash</a>.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Scripts (already non-blocking at end) -->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/jquery.scrolly.min.js"></script>
+  <script src="assets/js/jquery.scrollex.min.js"></script>
+  <script src="assets/js/skel.min.js"></script>
+  <script src="assets/js/util.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
-
 </html>

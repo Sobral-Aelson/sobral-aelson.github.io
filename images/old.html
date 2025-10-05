@@ -1,0 +1,450 @@
+<!DOCTYPE HTML>
+<!--
+	Urban by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+
+<head>
+	<title>Aelson Sobral</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<!--
+			MISSING STUFF FOR MATH/LaTeX/usw.
+		-->
+
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/pcooksey/bibtex-js@1.0.0/src/bibtex_js.js"></script>
+
+	<link rel="stylesheet" href="assets/css/main.css" />
+
+	  <style>
+    .col.col1.first { display:flex; justify-content:center; align-items:flex-start; }
+
+    /* Option A: circle */
+    .photo-circle { width: clamp(180px, 28vw, 360px); aspect-ratio:1/1; border-radius:50%; overflow:hidden; box-shadow:0 8px 24px rgba(0,0,0,.12);}
+    .photo-circle img { width:100%; height:100%; display:block; object-fit:cover; object-position:center; }
+
+    /* Option B: rectangle */
+    .photo-rect { width: clamp(260px, 34vw, 520px); border-radius:16px; overflow:hidden; box-shadow:0 8px 24px rgba(0,0,0,.12);}
+    .photo-rect img { width:100%; height:auto; display:block; }
+  </style>
+
+  <!-- Inline CSS (scoped to this section) -->
+<style>
+  .research-section .research-center {
+    max-width: 900px;
+    margin: 0 auto 2rem auto;
+    text-align: center;
+  }
+  .research-section .pub-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem 3rem; /* row-gap, column-gap */
+    align-items: start;
+  }
+  .research-section .pub-list { list-style: none; margin: 0; padding: 0; }
+  .research-section .pub-item { margin: 0 0 1.25rem 0; }
+
+  /* Mobile: stack */
+  @media (max-width: 900px) {
+    .research-section .pub-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+
+<body>
+
+	<!-- Header 
+			<header id="header" class="alt">
+				<div class="logo"><a href="index.html">Urban <span>by TEMPLATED</span></a></div>
+				<a href="#menu">Menu</a>
+			</header>-->
+
+	<!-- Nav -->
+	<nav id="menu">
+		<ul class="links">
+			<li><a href="index.html">Back to Top</a></li>
+			<!--<li><a href="generic.html">Generic</a></li>
+			<li><a href="elements.html">Elements</a></li>-->
+		</ul>
+	</nav>
+
+	<!-- Banner -->
+	<section id="banner">
+		<div class="inner">
+			<header>
+				<h1>Aelson Sobral</h1>
+				<p>Postdoctoral fellow</p>
+				<p>KAUST, Saudi Arabia</p>
+			</header>
+			<a href="#main" class="button big scrolly">About Me</a>&nbsp; &nbsp; &nbsp;
+			<a href="#main1" class="button big scrolly">Research</a>&nbsp; &nbsp; &nbsp;
+			<!--<a href="#main2" class="button big scrolly">OiO Seminar</a>&nbsp; &nbsp; &nbsp;
+			<a href="#main3" class="button big scrolly">News</a>&nbsp; &nbsp; &nbsp;-->
+			<!--<a href="#main4" class="button big scrolly">Education</a>-->
+		</div>
+	</section>
+
+	<!-- Main -->
+	<div id="main">
+
+		<!-- Section -->
+		<section class="wrapper style1">
+			<div class="inner">
+				<!-- 2 Columns -->
+				<div class="flex flex-2">
+					<div class="col col1">
+						<div class="photo-circle">
+							<!-- <a href="generic.html" class="link"><img src="images/self-portrait.png" alt="" /></a> -->
+							<!-- <a href="generic.html" class="link"><img src="images/surowiec-opt1.jpg" alt="" /></a> -->
+							<!-- <a href="generic.html" class="link"><img src="images/surowiec-opt1-crop.jpg" alt="" /></a> -->
+							<a class="link"><img src="images/kaust-photo.JPG" alt="" /></a>
+						</div>
+					</div>
+					<div class="col col2">
+						<!--<h3>Hello!</h3>-->
+						<p>I am a Postdoctorate fellow in the
+							<a
+								href="https://cemse.kaust.edu.sa">
+								Computer, Electrical and Mathematical Sciences and Engineering Division (CEMSE), 
+							</a>
+							at
+							<a href="https://kaust.edu.sa/en/research">King Abdullah University of Science and Technology (KAUST)</a>
+							in Saudi Arabia.
+						</p>
+						<p>Drop me a line if interested in a joint work:</p>
+
+						<p> Email: aelson[dot]sobral[at]kaust[dot]edu[dot]sa
+
+						<p>
+							I completed my PhD at the Federal University of Paraíba, Brazil, under the supervision of Professors Damião Araújo and Eduardo Teixeira. Prior to finishing my PhD, I spent a year as a research scholar with Professor Teixeira, focusing on regularity in Free Boundary Problems. Additionally, I had the opportunity to spend some time at PUC-Rio, working with Professor Boyan Sirakov.
+						</p>
+
+						<p>
+							My research is the development of geometric tools for analyzing 
+							Free Boundary Problems. 
+						</p>
+
+						<p>
+							You can find a more detailed CV
+							<a href="research/CV.pdf" target="_blank"
+								rel="noopener noreferrer"><u>here.</u></a>
+						</p>
+
+						<a href="#" class="button">Back to Top</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		
+<!-- Section -->
+<div id="main1"></div>
+<section class="wrapper style2 research-section">
+  <div class="inner">
+    <!-- Centered Research -->
+    <div class="research-center">
+      <h3>Research</h3>
+      <p>
+        My research focuses on developing geometric tools to analyze Free Boundary Problems, with a particular
+        interest in regularity theory for degenerate and singular PDEs, as well as free boundary regularity.
+        Recently, I’ve also become interested in generalized maximum principles for elliptic equations in both
+        divergence and non-divergence forms.
+      </p>
+    </div>
+
+    <!-- Two columns -->
+    <div class="pub-grid">
+      <!-- Papers -->
+      <div class="pub-col">
+        <h3>Papers</h3>
+        <ul class="pub-list">
+          <li class="pub-item">
+            <a href="https://linkinghub.elsevier.com/retrieve/pii/S0022123625003295" target="_blank" rel="noopener noreferrer"
+               style="color:#ffffff; font-style:italic; text-decoration:none; font-weight:700; font-size:1.12em;">
+              Regularity in diffusion models with gradient activation
+            </a>
+            <div style="margin-top:4px; line-height:1.35; font-size:1.05em; color:#445060;">
+              <em>J. Funct. Anal.</em> (2025) ·
+              <span>D. Araújo, A. Sobral and E. Teixeira</span>
+            </div>
+          </li>
+
+          <li class="pub-item">
+            <a href="https://link.springer.com/article/10.1007/s42985-025-00320-7" target="_blank" rel="noopener noreferrer"
+               style="color:#ffffff; font-style:italic; text-decoration:none; font-weight:700; font-size:1.12em;">
+              Degenerate free boundary problems with oscillatory singularities
+            </a>
+            <div style="margin-top:4px; line-height:1.35; font-size:1.05em; color:#445060;">
+              <em>Partial Differ. Equ. Appl.</em> (2025) ·
+              <span>A. Sobral, E. Teixeira and J.M. Urbano</span>
+            </div>
+          </li>
+
+          <li class="pub-item">
+            <a href="https://doi.org/10.1016/j.jfa.2024.110593" target="_blank" rel="noopener noreferrer"
+               style="color:#ffffff; font-style:italic; text-decoration:none; font-weight:700; font-size:1.12em;">
+              Cordes-Nirenberg type results for nonlocal equations with deforming kernels
+            </a>
+            <div style="margin-top:4px; line-height:1.35; font-size:1.05em; color:#445060;">
+              <em>J. Funct. Anal.</em> (2024) ·
+              <span>D. dos Prazeres, A. Sobral and J. M. Urbano</span>
+            </div>
+          </li>
+
+          <li class="pub-item">
+            <a href="https://doi.org/10.1007/s42985-021-00090-y" target="_blank" rel="noopener noreferrer"
+               style="color:#ffffff; font-style:italic; text-decoration:none; font-weight:700; font-size:1.12em;">
+              Regularity estimates for nonlocal equations with an asymptotic property
+            </a>
+            <div style="margin-top:4px; line-height:1.35; font-size:1.05em; color:#445060;">
+              <em>Partial Differ. Equ. Appl.</em> (2021) ·
+              <span>D. dos Prazeres and A. Sobral</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Preprints -->
+      <div class="pub-col">
+        <h3>Preprints</h3>
+        <ul class="pub-list">
+          <li class="pub-item">
+            <a href="https://arxiv.org/abs/2401.08071" target="_blank" rel="noopener noreferrer"
+               style="color:#ffffff; font-style:italic; text-decoration:none; font-weight:700; font-size:1.12em;">
+              On free boundary problems shaped by oscillatory singularities
+            </a>
+            <div style="margin-top:4px; line-height:1.35; font-size:1.05em; color:#445060;">
+              <em>Submitted</em> (2024) ·
+              <span>D. Araújo, A. Sobral, E. Teixeira and J. M. Urbano</span>
+            </div>
+          </li>
+
+          <li class="pub-item">
+            <a href="https://arxiv.org/abs/2312.02932" target="_blank" rel="noopener noreferrer"
+               style="color:#ffffff; font-style:italic; text-decoration:none; font-weight:700; font-size:1.12em;">
+              Higher regularity of solutions to fully nonlinear elliptic equations
+            </a>
+            <div style="margin-top:4px; line-height:1.35; font-size:1.05em; color:#445060;">
+              <em>Submitted</em> (2024) ·
+              <span>T. Nascimento, G. Sá, A. Sobral and E. Teixeira</span>
+            </div>
+          </li>
+
+          <li class="pub-item">
+            <a href="https://arxiv.org/abs/2508.14736" target="_blank" rel="noopener noreferrer"
+               style="color:#ffffff; font-style:italic; text-decoration:none; font-weight:700; font-size:1.12em;">
+              Borderline regularity in singular free boundary problems.
+            </a>
+            <div style="margin-top:4px; line-height:1.35; font-size:1.05em; color:#445060;">
+              <em>Submitted</em> (2025) ·
+              <span>D. Araújo, A. Sobral, E. Teixeira and J. M. Urbano</span>
+            </div>
+          </li>
+
+          <li class="pub-item">
+            <a href=" " target="_blank" rel="noopener noreferrer"
+               style="color:#ffffff; font-style:italic; text-decoration:none; font-weight:700; font-size:1.12em;">
+              Regularity estimates for PDEs with nonlocal degeneracies.
+            </a>
+            <div style="margin-top:4px; line-height:1.35; font-size:1.05em; color:#445060;">
+              <em>Submitted</em> (2025) ·
+              <span>D. Araújo, A. Sobral, E. Teixeira and J. M. Urbano</span>
+            </div>
+          </li>
+
+          <li class="pub-item">
+            <a href="https://arxiv.org/abs/2508.20841" target="_blank" rel="noopener noreferrer"
+               style="color:#ffffff; font-style:italic; text-decoration:none; font-weight:700; font-size:1.12em;">
+              On a nonlocal superconductivity problem.
+            </a>
+            <div style="margin-top:4px; line-height:1.35; font-size:1.05em; color:#445060;">
+              <em>Submitted</em> (2025) ·
+              <span>D. Araújo and A. Sobral</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <p style="text-align:center; margin-top:2rem;">
+      <a href="#" class="button">Back to Top</a>
+    </p>
+  </div>
+</section>
+
+		<!-- Section -->
+		<div id="main1"></div>
+		<section class="wrapper style2">
+
+			<div class="inner">
+				<div class="flex flex-2">
+					<!-- <div id="main1"></div> -->
+					<div class="col col2">
+
+						<h3>Research</h3>
+						<p> 
+							My research focuses on developing geometric tools to analyze Free Boundary Problems, with a particular interest in regularity theory for degenerate and singular PDEs, as well as free boundary regularity. Recently, I’ve also become interested in generalized maximum principles for elliptic equations in both divergence and non-divergence forms.
+						</p>
+
+						<p></p>
+
+						<h3>Papers</h3>
+
+						<li class="pub-item">
+  						<a href="https://linkinghub.elsevier.com/retrieve/pii/S0022123625003295" target="_blank" rel="noopener noreferrer"
+     					style="color:#ffffff; font-style:italic; text-decoration:none; font-weight:700; font-size:1.12em;">
+    					Regularity in diffusion models with gradient activation
+  						</a>
+  						<div style="margin-top:4px; line-height:1.35; font-size:1.05em; color:#445060;">
+    					<em>J. Funct. Anal.</em> (2025) ·
+    					<span>D. Araújo, A. Sobral and E. Teixeira</span>
+  						</div>
+						</li>
+
+						<p></p>
+
+						<li class="pub-item">
+  						<a href="https://link.springer.com/article/10.1007/s42985-025-00320-7" target="_blank" rel="noopener noreferrer"
+     					style="color:#ffffff; font-style:italic; text-decoration:none; font-weight:700; font-size:1.12em;">
+    					Degenerate free boundary problems with oscillatory singularities
+  						</a>
+  						<div style="margin-top:4px; line-height:1.35; font-size:1.05em; color:#445060;">
+    					<em>Partial Differ. Equ. Appl.</em> (2025) ·
+    					<span>A. Sobral, E. Teixeira and J.M. Urbano</span>
+  						</div>
+						</li>
+
+						<p></p>
+
+						<li class="pub-item">
+  						<a href="https://doi.org/10.1016/j.jfa.2024.110593" target="_blank" rel="noopener noreferrer"
+     					style="color:#ffffff; font-style:italic; text-decoration:none; font-weight:700; font-size:1.12em;">
+    					Cordes-Nirenberg type results for nonlocal equations with deforming kernels
+  						</a>
+  						<div style="margin-top:4px; line-height:1.35; font-size:1.05em; color:#445060;">
+    					<em>J. Funct. Anal.</em> (2024) ·
+    					<span>D. dos Prazeres, A. Sobral and J. M. Urbano</span>
+  						</div>
+						</li>
+
+						<p> </p>
+
+						<li class="pub-item">
+  						<a href="https://doi.org/10.1007/s42985-021-00090-y" target="_blank" rel="noopener noreferrer"
+     					style="color:#ffffff; font-style:italic; text-decoration:none; font-weight:700; font-size:1.12em;">
+    					Regularity estimates for nonlocal equations with an asymptotic property
+  						</a>
+  						<div style="margin-top:4px; line-height:1.35; font-size:1.05em; color:#445060;">
+    					<em>Partial Differ. Equ. Appl.</em> (2021) ·
+    					<span>D. dos Prazeres and A. Sobral</span>
+  						</div>
+						</li>
+
+						<p></p>
+						
+							<h3>Preprints</h3>
+
+						<li class="pub-item">
+  						<a href="https://arxiv.org/abs/2401.08071" target="_blank" rel="noopener noreferrer"
+     					style="color:#ffffff; font-style:italic; text-decoration:none; font-weight:700; font-size:1.12em;">
+    					On free boundary problems shaped by oscillatory singularities
+  						</a>
+  						<div style="margin-top:4px; line-height:1.35; font-size:1.05em; color:#445060;">
+    					<em>Submitted</em> (2024) ·
+    					<span>D. Araújo, A. Sobral, E. Teixeira and J. M. Urbano</span>
+  						</div>
+						</li>
+
+						<p> </p>
+
+						<li class="pub-item">
+  						<a href="https://arxiv.org/abs/2312.02932" target="_blank" rel="noopener noreferrer"
+     					style="color:#ffffff; font-style:italic; text-decoration:none; font-weight:700; font-size:1.12em;">
+    					Higher regularity of solutions to fully nonlinear elliptic equations
+  						</a>
+  						<div style="margin-top:4px; line-height:1.35; font-size:1.05em; color:#445060;">
+    					<em>Submitted</em> (2024) ·
+    					<span>T. Nascimento, G. Sá, A. Sobral and E. Teixeira</span>
+  						</div>
+						</li>
+
+						<p> </p>
+
+						<li class="pub-item">
+  						<a href="https://arxiv.org/abs/2508.14736" target="_blank" rel="noopener noreferrer"
+     					style="color:#ffffff; font-style:italic; text-decoration:none; font-weight:700; font-size:1.12em;">
+    					Borderline regularity in singular free boundary problems.
+  						</a>
+  						<div style="margin-top:4px; line-height:1.35; font-size:1.05em; color:#445060;">
+    					<em>Submitted</em> (2025) ·
+    					<span>D. Araújo, A. Sobral, E. Teixeira and J. M. Urbano</span>
+  						</div>
+						</li>
+
+						<p> </p>
+
+						<li class="pub-item">
+  						<a href=" " target="_blank" rel="noopener noreferrer"
+     					style="color:#ffffff; font-style:italic; text-decoration:none; font-weight:700; font-size:1.12em;">
+    					Regularity estimates for PDEs with nonlocal degeneracies.
+  						</a>
+  						<div style="margin-top:4px; line-height:1.35; font-size:1.05em; color:#445060;">
+    					<em>Submitted</em> (2025) ·
+    					<span>D. Araújo, A. Sobral, E. Teixeira and J. M. Urbano</span>
+  						</div>
+						</li>
+
+						<p> </p>
+
+						<li class="pub-item">
+  						<a href="https://arxiv.org/abs/2508.20841" target="_blank" rel="noopener noreferrer"
+     					style="color:#ffffff; font-style:italic; text-decoration:none; font-weight:700; font-size:1.12em;">
+    					On a nonlocal superconductivity problem.
+  						</a>
+  						<div style="margin-top:4px; line-height:1.35; font-size:1.05em; color:#445060;">
+    					<em>Submitted</em> (2025) ·
+    					<span>D. Araújo and A. Sobral</span>
+  						</div>
+						</li>
+
+						<p> </p>
+							<a href="#" class="button">Back to Top</a>
+							<p></p>
+					
+			</div>
+		</section>
+		
+
+	</div>
+
+	<!-- Footer -->
+	<footer id="footer">
+		<div class="copyright">
+			<ul class="icons">
+
+			</ul>
+			<p>&copy;
+				<!--Untitled. All rights reserved. -->
+				Design: <a href="https://templated.co">TEMPLATED</a>.
+				Downloaded from <a href="https://themeslab.org/" target="_blank">Themeslab</a>
+				Images: <a href="https://unsplash.com">Unsplash</a>.
+
+			</p>
+
+		</div>
+	</footer>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/skel.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
