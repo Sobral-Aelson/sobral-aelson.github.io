@@ -607,20 +607,36 @@
 <!-- Contact -->
 <section id="contact" class="wrapper style1 contact-section">
   <div class="inner">
-    <div class="contact-card">
-      <h3>Contact</h3>
-      <p>If you'd like to get in touch, email me at:</p>
+    <div class="contact-card" aria-labelledby="contact-title">
+      <p class="contact-kicker">Get in touch</p>
+      <h3 id="contact-title">Contact</h3>
 
-      <p class="email-line">
-        <span class="email-chip">
-          <a id="emailLink" href="#" rel="noopener noreferrer">
-            <span id="emailText">aelson.sobral@kaust.edu.sa</span>
-          </a>
-        </span>
-        <button id="copyEmail" class="button small" type="button" aria-label="Copy email">
+      <p class="contact-text">
+        For questions, collaborations, or seminar invitations, feel free to email me.
+      </p>
+
+      <div class="contact-actions">
+        <a
+          id="emailLink"
+          class="email-chip"
+          href="mailto:aelson.sobral@kaust.edu.sa"
+          aria-label="Email Aelson Sobral"
+        >
+          <span class="email-icon" aria-hidden="true">✉</span>
+          <span id="emailText">aelson.sobral@kaust.edu.sa</span>
+        </a>
+
+        <button
+          id="copyEmail"
+          class="button small copy-button"
+          type="button"
+          aria-label="Copy email address"
+        >
           Copy
         </button>
-      </p>
+      </div>
+
+      <p id="copyFeedback" class="copy-feedback" aria-live="polite"></p>
 
       <noscript>
         <p><strong>Email:</strong> aelson[dot]sobral[at]kaust[dot]edu[dot]sa</p>
