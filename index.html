@@ -86,6 +86,87 @@
       left: 1rem; top: 1rem; width: auto; height: auto; padding: .5rem .75rem;
       background: #fff; color:#000; border-radius: .25rem; z-index: 1000;
     }
+    /* --- Book section --- */
+.book-section .book-card {
+  max-width: 980px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(190px, 300px) 1fr;
+  gap: 2rem;
+  align-items: center;
+  background: #ffffff;
+  border-radius: 18px;
+  padding: clamp(1.25rem, 3vw, 2rem);
+  box-shadow: 0 8px 24px rgba(0,0,0,.12);
+}
+
+.book-section .book-cover {
+  margin: 0;
+  justify-self: center;
+  width: 100%;
+  max-width: 300px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 22px rgba(0,0,0,.18);
+}
+
+.book-section .book-cover a {
+  display: block;
+}
+
+.book-section .book-cover img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.book-section .book-label {
+  margin: 0 0 .35rem 0;
+  color: #ff7a00;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  font-size: .9em;
+}
+
+.book-section h3 {
+  font-size: 1.35em;
+  color: #0b2e4e;
+  font-weight: 700;
+  font-style: italic;
+  margin: 0 0 .5rem 0;
+}
+
+.book-section .book-meta {
+  font-size: 1.05em;
+  line-height: 1.5;
+  color: #1f4f7a;
+  margin: 0 0 .9rem 0;
+}
+
+.book-section p {
+  font-size: 1.05em;
+  line-height: 1.6;
+  color: #445060;
+}
+
+.book-section .book-actions {
+  display: flex;
+  gap: .75rem;
+  flex-wrap: wrap;
+  margin-top: 1.1rem;
+}
+
+@media (max-width: 760px) {
+  .book-section .book-card {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .book-section .book-actions {
+    justify-content: center;
+  }
+}
   </style>
 
   <!-- Scoped palette + styles -->
@@ -466,6 +547,59 @@
     <p style="text-align:center; margin-top:2rem;">
       <a href="#top" class="button">Back to Top</a>
     </p>
+  </div>
+</section>
+
+<!-- Book -->
+<section id="book" class="wrapper style1 book-section">
+  <div class="inner">
+    <div class="book-card">
+
+      <figure class="book-cover">
+        <a
+          href="https://impa.br/wp-content/uploads/2025/10/35CBM10-eBook.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Open The fractional Laplacian uncovered"
+        >
+          <img
+            src="images/fractional-laplacian-cover.jpg"
+            alt="Front cover of The fractional Laplacian uncovered"
+            loading="lazy"
+            decoding="async"
+          >
+        </a>
+      </figure>
+
+      <div class="book-info">
+        <p class="book-label">Book</p>
+
+        <h3>The fractional Laplacian uncovered</h3>
+
+        <p class="book-meta">
+          Disson dos Prazeres, Aelson Sobral, and Rafayel Teymurazyan<br>
+          IMPA, Coleção Colóquios Brasileiros de Matemática, 2025
+        </p>
+
+        <p>
+          Lecture notes introducing the fractional Laplacian and related nonlocal equations,
+          including maximum principles, Harnack inequalities, Krylov-Safonov regularity theory,
+          approximation methods, and improved regularity.
+        </p>
+
+        <p class="book-actions">
+          <a
+            href="https://impa.br/wp-content/uploads/2025/10/35CBM10-eBook.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="button"
+          >
+            Read e-book
+          </a>
+        </p>
+      </div>
+
+    </div>
   </div>
 </section>
 
